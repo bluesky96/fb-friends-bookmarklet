@@ -46,7 +46,7 @@
         <section id="main-content">
 <h4>Hướng dẫn sử dụng (<a href="https://i.imgur.com/CGQWC30.gif" target="_blank">video</a>)</h4>
 
-<p><ol><li>Nhấn và giữ phím chuột vào 1 trong 2 liên kết bên dưới.</li><li>Kéo chuột vào thanh bookmark của trình duyệt.</li></ol></p>
+<p><ol><li>Nhấn và giữ phím chuột vào 1 trong 2 liên kết bên dưới.</li><li>Kéo chuột vào thanh bookmark của trình duyệt.</li><li>Truy cập vào <a href="https://www.facebook.com/" target="_blank">Facebook</a> và bấm vào bookmark bạn vừa tạo ở bước 2.</li><li>Bạn sẽ thấy 1 danh sách các tên người dùng kèm theo các chỉ số tương ứng như <a href="https://i.imgur.com/vJxJ4gm.png" target="_blank">thế này</a>. Chỉ số càng thấp thì càng nhiều tương tác trên Facebook.</li></ol></p>
 
 <p><ul>
 <li><strong>Phiên bản đơn giản (nhanh chóng):</strong><br/>
@@ -69,6 +69,16 @@
 <li><a href="https://github.com/karmiphuc/fb-friends-bookmarklet/issues/new">Báo lỗi/Góp ý</a>
 </li>
 </ul>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=542398892474873";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-href="https://karmiphuc.github.io/fb-friends-bookmarklet/" data-numposts="10"></div>
 
         </section>
 
